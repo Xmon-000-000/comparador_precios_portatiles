@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "currency": "EUR",
+  "disclaimer": "Todos los precios son datos de ejemplo y no representan ofertas verificadas ni disponibilidad actual.",
+  "products": [
+    {"id":"msi-cyborg-15-5060","updatedAt":"2026-09-28","offers":{"amazon":{"price":1199,"url":"https://www.amazon.es/s?k=MSI+Cyborg+15+B2RW+RTX+5060"},"pccomponentes":{"price":1249,"url":"https://www.pccomponentes.com/buscar/?query=MSI%20Cyborg%2015%20B2RW%20RTX%205060"}}},
+    {"id":"gigabyte-aorus-elite-16-5060","updatedAt":"2026-09-28","offers":{"amazon":{"price":1399,"url":"https://www.amazon.es/s?k=Gigabyte+AORUS+ELITE+16+RTX+5060"},"pccomponentes":{"price":1349,"url":"https://www.pccomponentes.com/buscar/?query=Gigabyte%20AORUS%20ELITE%2016%20RTX%205060"}}},
+    {"id":"hp-omen-16-5060","updatedAt":"2026-09-28","offers":{"amazon":{"price":1449,"url":"https://www.amazon.es/s?k=HP+OMEN+16+RTX+5060+Ryzen+7"},"pccomponentes":{"price":1399,"url":"https://www.pccomponentes.com/buscar/?query=HP%20OMEN%2016%20RTX%205060%20Ryzen%207"}}},
+    {"id":"asus-tuf-a16-5060","updatedAt":"2026-09-28","offers":{"amazon":{"price":1299,"url":"https://www.amazon.es/s?k=ASUS+TUF+Gaming+A16+RTX+5060"},"pccomponentes":{"price":1329,"url":"https://www.pccomponentes.com/buscar/?query=ASUS%20TUF%20Gaming%20A16%20RTX%205060"}}},
+    {"id":"lenovo-legion-5-5070","updatedAt":"2026-09-28","offers":{"amazon":{"price":1699,"url":"https://www.amazon.es/s?k=Lenovo+Legion+5+RTX+5070+32GB"},"pccomponentes":{"price":1649,"url":"https://www.pccomponentes.com/buscar/?query=Lenovo%20Legion%205%20RTX%205070%2032GB"}}},
+    {"id":"acer-predator-helios-neo-16-5070","updatedAt":"2026-09-28","offers":{"amazon":{"price":1799,"url":"https://www.amazon.es/s?k=Acer+Predator+Helios+Neo+16+RTX+5070"},"pccomponentes":{"price":1749,"url":"https://www.pccomponentes.com/buscar/?query=Acer%20Predator%20Helios%20Neo%2016%20RTX%205070"}}},
+    {"id":"gigabyte-aorus-master-16-5070","updatedAt":"2026-09-28","offers":{"amazon":{"price":2099,"url":"https://www.amazon.es/s?k=Gigabyte+AORUS+MASTER+16+RTX+5070"},"pccomponentes":{"price":1999,"url":"https://www.pccomponentes.com/buscar/?query=Gigabyte%20AORUS%20MASTER%2016%20RTX%205070"}}},
+    {"id":"asus-rog-strix-g16-5080","updatedAt":"2026-09-28","offers":{"amazon":{"price":2599,"url":"https://www.amazon.es/s?k=ASUS+ROG+Strix+G16+RTX+5080"},"pccomponentes":{"price":2549,"url":"https://www.pccomponentes.com/buscar/?query=ASUS%20ROG%20Strix%20G16%20RTX%205080"}}},
+    {"id":"msi-vector-16-hx-5080","updatedAt":"2026-09-28","offers":{"amazon":{"price":2799,"url":"https://www.amazon.es/s?k=MSI+Vector+16+HX+AI+RTX+5080"},"pccomponentes":{"price":2699,"url":"https://www.pccomponentes.com/buscar/?query=MSI%20Vector%2016%20HX%20AI%20RTX%205080"}}},
+    {"id":"lenovo-legion-pro-7i-5080","updatedAt":"2026-09-28","offers":{"amazon":{"price":3199,"url":"https://www.amazon.es/s?k=Lenovo+Legion+Pro+7i+RTX+5080"},"pccomponentes":{"price":3099,"url":"https://www.pccomponentes.com/buscar/?query=Lenovo%20Legion%20Pro%207i%20RTX%205080"}}}
+  ]
+}

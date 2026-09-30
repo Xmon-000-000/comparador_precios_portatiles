@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "currency": "EUR",
+  "products": [
+    {"id":"msi-cyborg-15-5060","brand":"MSI","model":"Cyborg 15 B2RW","cpu":"Intel Core 7 240H","cpuScore":72,"gpu":"RTX 5060","ram":16,"ssd":1000,"ssdLabel":"1 TB NVMe","screen":15.6,"panel":"FHD · 144 Hz","searchTerms":"MSI Cyborg 15 B2RW RTX 5060"},
+    {"id":"gigabyte-aorus-elite-16-5060","brand":"Gigabyte","model":"AORUS ELITE 16","cpu":"Intel Core i7-14650HX","cpuScore":78,"gpu":"RTX 5060","ram":16,"ssd":1000,"ssdLabel":"1 TB NVMe","screen":16,"panel":"WQXGA · 165 Hz","searchTerms":"Gigabyte AORUS ELITE 16 RTX 5060"},
+    {"id":"hp-omen-16-5060","brand":"HP","model":"OMEN 16-ap0000ns","cpu":"AMD Ryzen 7 260","cpuScore":76,"gpu":"RTX 5060","ram":32,"ssd":1000,"ssdLabel":"1 TB NVMe","screen":16.1,"panel":"FHD · 144 Hz","searchTerms":"HP OMEN 16 RTX 5060 Ryzen 7"},
+    {"id":"asus-tuf-a16-5060","brand":"ASUS","model":"TUF Gaming A16","cpu":"AMD Ryzen 7 260","cpuScore":76,"gpu":"RTX 5060","ram":16,"ssd":1000,"ssdLabel":"1 TB NVMe","screen":16,"panel":"WUXGA · 165 Hz","searchTerms":"ASUS TUF Gaming A16 RTX 5060"},
+    {"id":"lenovo-legion-5-5070","brand":"Lenovo","model":"Legion 5 16IRX10","cpu":"Intel Core i7-14700HX","cpuScore":86,"gpu":"RTX 5070","ram":32,"ssd":1000,"ssdLabel":"1 TB NVMe","screen":16,"panel":"WQXGA · 165 Hz","searchTerms":"Lenovo Legion 5 RTX 5070 32GB"},
+    {"id":"acer-predator-helios-neo-16-5070","brand":"Acer","model":"Predator Helios Neo 16","cpu":"Intel Core Ultra 7 255HX","cpuScore":89,"gpu":"RTX 5070","ram":32,"ssd":1000,"ssdLabel":"1 TB NVMe","screen":16,"panel":"WQXGA · 240 Hz","searchTerms":"Acer Predator Helios Neo 16 RTX 5070"},
+    {"id":"gigabyte-aorus-master-16-5070","brand":"Gigabyte","model":"AORUS MASTER 16","cpu":"Intel Core Ultra 9 275HX","cpuScore":96,"gpu":"RTX 5070","ram":32,"ssd":2000,"ssdLabel":"2 TB NVMe","screen":16,"panel":"WQXGA · 240 Hz","searchTerms":"Gigabyte AORUS MASTER 16 RTX 5070"},
+    {"id":"asus-rog-strix-g16-5080","brand":"ASUS","model":"ROG Strix G16","cpu":"Intel Core Ultra 9 275HX","cpuScore":96,"gpu":"RTX 5080","ram":32,"ssd":1000,"ssdLabel":"1 TB NVMe","screen":16,"panel":"WQXGA · 240 Hz","searchTerms":"ASUS ROG Strix G16 RTX 5080"},
+    {"id":"msi-vector-16-hx-5080","brand":"MSI","model":"Vector 16 HX AI","cpu":"Intel Core Ultra 9 275HX","cpuScore":96,"gpu":"RTX 5080","ram":32,"ssd":2000,"ssdLabel":"2 TB NVMe","screen":16,"panel":"QHD+ · 240 Hz","searchTerms":"MSI Vector 16 HX AI RTX 5080"},
+    {"id":"lenovo-legion-pro-7i-5080","brand":"Lenovo","model":"Legion Pro 7i Gen 10","cpu":"Intel Core Ultra 9 275HX","cpuScore":96,"gpu":"RTX 5080","ram":64,"ssd":2000,"ssdLabel":"2 TB NVMe","screen":16,"panel":"WQXGA · 240 Hz","searchTerms":"Lenovo Legion Pro 7i RTX 5080"}
+  ]
+}
