@@ -1,4 +1,4 @@
-const PALETTE = ["#167a68", "#e76c46", "#3276a8", "#c59a31", "#7461a8", "#bd5365", "#4c8061", "#5c728d", "#b27237", "#498d91"];
+const PALETTE = ["#647a20", "#d75b43", "#3276a8", "#c59a31", "#7461a8", "#bd5365", "#4c8061", "#5c728d", "#b27237", "#498d91"];
 const euro = new Intl.NumberFormat("es-ES", { style: "currency", currency: "EUR", maximumFractionDigits: 0 });
 
 export function renderHistoryChart(history, products, selectedId) {
@@ -57,10 +57,10 @@ export function updateHistoryStats(history, products, selectedId) {
     return product?.bestPrice ?? model.prices.at(-1);
   }).filter(Number.isFinite);
   const changes = selected.map((model) => {
-    const first = model.prices.find(Number.isFinite);
-    const last = model.prices.at(-1);
-    return first ? ((last - first) / first) * 100 : 0;
-  });
+    const observed = model.prices.filter(Number.isFinite);
+    if (observed.length < 2) return null;
+    return ((observed.at(-1) - observed[0]) / observed[0]) * 100;
+  }).filter(Number.isFinite);
   const average = (items) => items.length ? items.reduce((sum, item) => sum + item, 0) / items.length : 0;
   const set = (selector, text) => { document.querySelector(selector).textContent = text; };
 
@@ -68,6 +68,6 @@ export function updateHistoryStats(history, products, selectedId) {
   set("#history-min", values.length ? euro.format(Math.min(...values)) : "—");
   set("#history-max", values.length ? euro.format(Math.max(...values)) : "—");
   const change = average(changes);
-  set("#history-change", `${change > 0 ? "+" : ""}${change.toFixed(1)}%`);
+  set("#history-change", changes.length ? `${change > 0 ? "+" : ""}${change.toFixed(1)}%` : "Pendiente");
   document.querySelector("#history-change").classList.toggle("negative-change", change > 0);
 }

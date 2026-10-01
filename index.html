@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#f4f6f7">
-    <meta name="description" content="Compara portátiles gaming por precio, GPU, memoria y valor por euro.">
-    <title>FrameRate | Comparador de portátiles gaming</title>
+    <meta name="theme-color" content="#202629">
+    <meta name="description" content="Registra y consulta capturas diarias de precios de portátiles gaming.">
+    <title>PrecioPulso | Monitor de precios gaming</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,24 +15,24 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#inicio" aria-label="FrameRate, inicio">
-        <span class="brand-mark" aria-hidden="true">F<span>R</span></span>
-        <span>frame<span class="brand-light">rate</span></span>
+      <a class="brand" href="#inicio" aria-label="PrecioPulso, inicio">
+        <span class="brand-mark" aria-hidden="true"><span class="brand-mark-p">P</span><span class="brand-mark-dot"></span></span>
+        <span>precio<span class="brand-light">pulso</span></span>
       </a>
       <nav class="topnav" aria-label="Navegación principal">
-        <a class="nav-current" href="#comparador">Comparador</a>
-        <a href="#historico">Histórico</a>
-        <a href="#ranking">Ranking</a>
+        <a class="nav-current" href="#amazon-ranking">Amazon</a>
+        <a href="#pccomponentes-ranking">PcComponentes</a>
+        <a href="#historico">Historial</a>
       </nav>
-      <div class="topbar-meta"><span class="live-dot"></span> DATOS DE EJEMPLO</div>
+      <div class="topbar-meta"><span class="live-dot"></span> CAPTURAS · 30/09/2026</div>
     </header>
 
     <main id="inicio">
       <section class="intro" aria-labelledby="page-title">
         <div>
           <p class="eyebrow">HARDWARE GAMING · ESPAÑA</p>
-          <h1 id="page-title">Encuentra tu próxima <span>máquina.</span></h1>
-          <p class="intro-copy">Compara especificaciones, sigue precios y descubre cuánto gaming obtienes por cada euro.</p>
+          <h1 id="page-title">Los mejores por cada <span>euro.</span></h1>
+          <p class="intro-copy">Rankings independientes con capturas de precios y configuración verificadas en cada tienda.</p>
         </div>
         <div class="intro-aside"><span class="intro-aside-number">01</span><span>SELECCIÓN<br>GAMING 2025–26</span></div>
       </section>
@@ -47,71 +47,49 @@
 
       <section id="comparador" class="workspace" aria-labelledby="compare-title">
         <div class="section-heading">
-          <div><p class="eyebrow">ELIGE CON DATOS</p><h2 id="compare-title">Comparador</h2></div>
-          <span id="result-count" class="result-count">Cargando catálogo…</span>
+          <div><p class="eyebrow">CAPTURAS DEL 30/09/2026</p><h2 id="compare-title">Top 10 calidad/precio por tienda</h2></div>
+          <span id="result-count" class="result-count">Calculando rankings…</span>
         </div>
-        <div class="filter-bar" aria-label="Filtros del catálogo">
-          <fieldset class="gpu-filter">
-            <legend>GPU</legend>
-            <label><input type="checkbox" value="RTX 5060" name="gpu"><span>5060</span></label>
-            <label><input type="checkbox" value="RTX 5070" name="gpu"><span>5070</span></label>
-            <label><input type="checkbox" value="RTX 5080" name="gpu"><span>5080</span></label>
-          </fieldset>
-          <label class="select-filter">MARCA
-            <select id="brand-filter"><option value="">Todas</option></select>
-          </label>
-          <label class="number-filter">PRECIO MÁX.
-            <span class="input-with-suffix"><input id="price-filter" type="number" min="0" step="50" placeholder="Sin límite" inputmode="numeric"><span>€</span></span>
-          </label>
-          <label class="select-filter">RAM MÍN.
-            <select id="ram-filter"><option value="0">Cualquiera</option><option value="16">16 GB</option><option value="32">32 GB</option><option value="64">64 GB</option></select>
-          </label>
-          <label class="select-filter">SSD MÍN.
-            <select id="ssd-filter"><option value="0">Cualquiera</option><option value="512">512 GB</option><option value="1000">1 TB</option><option value="2000">2 TB</option></select>
-          </label>
-          <label class="select-filter sort-filter">ORDENAR POR
-            <select id="sort-filter">
-              <option value="value">Calidad / precio</option><option value="price">Precio</option><option value="power">Potencia</option><option value="cpu">CPU</option><option value="gpu">GPU</option><option value="ram">RAM</option>
-            </select>
-          </label>
-          <button id="clear-filters" class="clear-button" type="button" aria-label="Limpiar filtros">Limpiar</button>
+        <div class="store-rankings">
+          <section id="amazon-ranking" class="store-ranking" aria-labelledby="amazon-title">
+            <div class="store-heading"><h3 id="amazon-title">Amazon</h3><span class="store-count" id="amazon-count">—</span></div>
+            <div class="table-wrap"><table class="rank-table">
+              <thead><tr><th scope="col">#</th><th scope="col">CONFIGURACIÓN</th><th scope="col">GPU · VRAM</th><th scope="col">RAM · SSD</th><th scope="col" class="numeric">PRECIO</th><th scope="col">VALOR / €</th><th scope="col">VENDEDOR · CAPTURA</th></tr></thead>
+              <tbody id="amazon-ranking-rows"><tr><td class="loading-cell" colspan="7">Cargando capturas…</td></tr></tbody>
+            </table></div>
+            <p id="amazon-coverage" class="coverage-note"></p>
+          </section>
+          <section id="pccomponentes-ranking" class="store-ranking" aria-labelledby="pccomponentes-title">
+            <div class="store-heading"><h3 id="pccomponentes-title">PcComponentes</h3><span class="store-count" id="pccomponentes-count">—</span></div>
+            <div class="table-wrap"><table class="rank-table">
+              <thead><tr><th scope="col">#</th><th scope="col">CONFIGURACIÓN</th><th scope="col">GPU · VRAM</th><th scope="col">RAM · SSD</th><th scope="col" class="numeric">PRECIO</th><th scope="col">VALOR / €</th><th scope="col">VENDEDOR · CAPTURA</th></tr></thead>
+              <tbody id="pccomponentes-ranking-rows"><tr><td class="loading-cell" colspan="7">Cargando capturas…</td></tr></tbody>
+            </table></div>
+            <p id="pccomponentes-coverage" class="coverage-note"></p>
+          </section>
         </div>
-
-        <div class="table-wrap">
-          <table>
-            <thead><tr>
-              <th scope="col">EQUIPO</th><th scope="col">PROCESADOR</th><th scope="col">GRÁFICA</th><th scope="col">MEMORIA</th><th scope="col">PANTALLA</th><th scope="col" class="numeric">AMAZON</th><th scope="col" class="numeric">PC COMPONENTES</th><th scope="col" class="numeric best-col">MEJOR PRECIO</th><th scope="col" class="numeric">DIFERENCIA</th><th scope="col">VALOR / €</th><th scope="col">ACTUALIZADO</th>
-            </tr></thead>
-            <tbody id="product-rows"><tr><td class="loading-cell" colspan="11">Cargando catálogo…</td></tr></tbody>
-          </table>
-        </div>
-        <p class="table-footnote"><span>ⓘ</span> Precios orientativos de ejemplo. Comprueba el precio y la disponibilidad en la tienda antes de comprar.</p>
-        <p id="empty-state" class="empty-state" hidden>No hay equipos que coincidan. Prueba a ampliar los filtros.</p>
-      </section>
-
-      <section id="ranking" class="ranking-section" aria-labelledby="ranking-title">
-        <div class="section-heading compact-heading"><div><p class="eyebrow">PUNTUACIÓN PROPIA</p><h2 id="ranking-title">Más rendimiento por euro</h2></div><span class="formula-tag">(GPU + RAM) ÷ precio</span></div>
-        <div id="ranking-list" class="ranking-list" aria-live="polite"></div>
+        <p class="table-footnote"><span>ⓘ</span> Ranking calculado solo con capturas de esa tienda: (puntuación GPU + puntuación RAM) ÷ precio. El vendedor y la variante figuran en cada fila.</p>
       </section>
 
       <section id="historico" class="history-section" aria-labelledby="history-title">
         <div class="section-heading history-heading">
-          <div><p class="eyebrow">SEGUIMIENTO DE PRECIOS</p><h2 id="history-title">Evolución histórica de precios</h2></div>
+          <div><p class="eyebrow">SEGUIMIENTO DE PRECIOS</p><h2 id="history-title">Historial de capturas</h2></div>
           <label class="select-filter history-select">MODELO
             <select id="history-model"><option value="all">Todos</option></select>
           </label>
         </div>
         <div class="history-stats" aria-live="polite">
           <div><span>PRECIO ACTUAL</span><strong id="history-current">—</strong></div>
-          <div><span>MÍNIMO HISTÓRICO</span><strong id="history-min">—</strong></div>
-          <div><span>MÁXIMO HISTÓRICO</span><strong id="history-max">—</strong></div>
+          <div><span>MÍNIMO REGISTRADO</span><strong id="history-min">—</strong></div>
+          <div><span>MÁXIMO REGISTRADO</span><strong id="history-max">—</strong></div>
           <div><span>VARIACIÓN</span><strong id="history-change">—</strong></div>
         </div>
-        <div class="chart-frame"><canvas id="price-chart" aria-label="Gráfico de evolución de precios" role="img"></canvas><p id="chart-fallback" class="chart-fallback" hidden>No se pudo cargar el gráfico. Comprueba tu conexión para acceder a Chart.js.</p></div>
+        <p class="history-note">Hay una captura diaria por configuración. Se añadirá evolución cuando existan observaciones de más fechas.</p>
+        <div class="chart-frame"><canvas id="price-chart" aria-label="Gráfico de precios capturados" role="img"></canvas><p id="chart-fallback" class="chart-fallback" hidden>No se pudo cargar el gráfico. Comprueba tu conexión para acceder a Chart.js.</p></div>
       </section>
     </main>
 
-    <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">F<span>R</span></span><span>frame<span class="brand-light">rate</span></span></a><p>Precios de muestra · Sin afiliación con las tiendas</p><a href="docs/architecture.md">Sobre el proyecto</a></footer>
+    <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true"><span class="brand-mark-p">P</span><span class="brand-mark-dot"></span></span><span>precio<span class="brand-light">pulso</span></span></a><p>Monitor de precios · Captura manual · Sin afiliación con las tiendas</p><a href="docs/architecture.md">Sobre el proyecto</a></footer>
     <div id="load-error" class="load-error" role="alert" hidden>No se pudo cargar el catálogo. Abre la web desde un servidor local o GitHub Pages.</div>
   </body>
 </html>
