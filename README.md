@@ -32,14 +32,32 @@ Para publicar cambios desde la rama de funcionalidad, crea y fusiona un pull req
 
 ## Captura diaria
 
-Ahora mismo la consulta es manual; GitHub Pages no ejecuta un proceso que lea tiendas ni guarde snapshots. Para actualizar el monitor cada día:
+GitHub Pages solo sirve archivos estáticos; no ejecuta un cron ni una tarea que lea sitios y escriba JSON. Para automatizarlo de forma segura, el proyecto usa un workflow programado que intenta actualizar los snapshots cada día si existe un feed externo válido.
 
-1. Comprueba el precio y vendedor de las fichas de cada tienda.
-2. Actualiza `data/precios.json` y añade el punto del día en `data/historico.json`, conservando un identificador distinto para cada configuración.
-3. Publica los cambios en `main` con `git add data && git commit -m "Update daily price snapshots" && git push origin main`.
-4. GitHub Actions desplegará automáticamente Pages al recibir el push.
+### Flujo recomendado
 
-Un disparador programado diario no puede recolectar precios por sí mismo. La automatización requeriría una fuente autorizada o un proceso externo aprobado que genere los JSON; el workflow actual solo publica archivos.
+1. Define un origen autorizado de precios, por ejemplo un endpoint JSON de una fuente fiable, una exportación de Google Sheets, un archivo privado del repositorio o un servicio externo con acceso autorizado.
+2. Guarda la URL del feed como un secreto de GitHub llamado `PRICE_FEED_URL` o usa `PRICE_FEED_PATH` para un archivo local de prueba.
+3. Cada día, a las 07:00 UTC, el workflow `.github/workflows/daily-update.yml` ejecuta `scripts/update_prices.py` y actualiza `data/precios.json` y `data/historico.json` solo si el feed aporta valores válidos.
+4. Si hay cambios, el mismo workflow hace commit y push automático a la rama activa.
+5. Cuando el push llega a `main`, GitHub Actions vuelve a desplegar la web estática en Pages.
+
+### Formato del feed
+
+El script acepta un JSON con una lista de ofertas o un objeto que incluya `offers` o `data`. Cada entrada debe representar una oferta válida:
+
+```json
+{
+  "productId": "asus-tuf-fa608um-rv005-5060-32-1tb",
+  "store": "amazon",
+  "price": 1499,
+  "url": "https://example.com/product",
+  "seller": "Amazon",
+  "date": "2026-10-01"
+}
+```
+
+Si no hay un feed configurado, el script se queda sin cambios y sale con un mensaje claro para evitar romper el sitio.
 
 ## Estructura
 
