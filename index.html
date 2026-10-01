@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#202629">
+    <meta name="description" content="Registra y consulta capturas diarias de precios de portátiles gaming.">
+    <title>PrecioPulso | Monitor de precios gaming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.9/dist/chart.umd.min.js" defer></script>
+    <script type="module" src="assets/js/app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="PrecioPulso, inicio">
+        <span class="brand-mark" aria-hidden="true"><span class="brand-mark-p">P</span><span class="brand-mark-dot"></span></span>
+        <span>precio<span class="brand-light">pulso</span></span>
+      </a>
+      <nav class="topnav" aria-label="Navegación principal">
+        <a class="nav-current" href="#amazon-ranking">Amazon</a>
+        <a href="#pccomponentes-ranking">PcComponentes</a>
+        <a href="#historico">Historial</a>
+      </nav>
+      <div class="topbar-meta"><span class="live-dot"></span> CAPTURAS · 30/09/2026</div>
+    </header>
+
+    <main id="inicio">
+      <section class="intro" aria-labelledby="page-title">
+        <div>
+          <p class="eyebrow">HARDWARE GAMING · ESPAÑA</p>
+          <h1 id="page-title">Los mejores por cada <span>euro.</span></h1>
+          <p class="intro-copy">Rankings independientes con capturas de precios y configuración verificadas en cada tienda.</p>
+        </div>
+        <div class="intro-aside"><span class="intro-aside-number">01</span><span>SELECCIÓN<br>GAMING 2025–26</span></div>
+      </section>
+
+      <section class="kpi-grid" aria-label="Resumen del catálogo">
+        <article class="kpi"><span class="kpi-label">PORTÁTILES</span><strong id="kpi-count">—</strong><span class="kpi-note">en catálogo</span></article>
+        <article class="kpi kpi-highlight"><span class="kpi-label">MEJOR OFERTA</span><strong id="kpi-deal">—</strong><span id="kpi-deal-name" class="kpi-note">menor precio actual</span></article>
+        <article class="kpi"><span class="kpi-label">PRECIO MEDIO</span><strong id="kpi-average">—</strong><span class="kpi-note">mejor precio por equipo</span></article>
+        <article class="kpi"><span class="kpi-label">MÁS ASEQUIBLE</span><strong id="kpi-cheapest">—</strong><span id="kpi-cheapest-name" class="kpi-note">—</span></article>
+        <article class="kpi"><span class="kpi-label">MAYOR VALOR / €</span><strong id="kpi-score">—</strong><span id="kpi-score-name" class="kpi-note">—</span></article>
+      </section>
+
+      <section id="comparador" class="workspace" aria-labelledby="compare-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">CAPTURAS DEL 30/09/2026</p><h2 id="compare-title">Top 10 calidad/precio por tienda</h2></div>
+          <span id="result-count" class="result-count">Calculando rankings…</span>
+        </div>
+        <div class="store-rankings">
+          <section id="amazon-ranking" class="store-ranking" aria-labelledby="amazon-title">
+            <div class="store-heading"><h3 id="amazon-title">Amazon</h3><span class="store-count" id="amazon-count">—</span></div>
+            <div class="table-wrap"><table class="rank-table">
+              <thead><tr><th scope="col">#</th><th scope="col">CONFIGURACIÓN</th><th scope="col">GPU · VRAM</th><th scope="col">RAM · SSD</th><th scope="col" class="numeric">PRECIO</th><th scope="col">VALOR / €</th><th scope="col">VENDEDOR · CAPTURA</th></tr></thead>
+              <tbody id="amazon-ranking-rows"><tr><td class="loading-cell" colspan="7">Cargando capturas…</td></tr></tbody>
+            </table></div>
+            <p id="amazon-coverage" class="coverage-note"></p>
+          </section>
+          <section id="pccomponentes-ranking" class="store-ranking" aria-labelledby="pccomponentes-title">
+            <div class="store-heading"><h3 id="pccomponentes-title">PcComponentes</h3><span class="store-count" id="pccomponentes-count">—</span></div>
+            <div class="table-wrap"><table class="rank-table">
+              <thead><tr><th scope="col">#</th><th scope="col">CONFIGURACIÓN</th><th scope="col">GPU · VRAM</th><th scope="col">RAM · SSD</th><th scope="col" class="numeric">PRECIO</th><th scope="col">VALOR / €</th><th scope="col">VENDEDOR · CAPTURA</th></tr></thead>
+              <tbody id="pccomponentes-ranking-rows"><tr><td class="loading-cell" colspan="7">Cargando capturas…</td></tr></tbody>
+            </table></div>
+            <p id="pccomponentes-coverage" class="coverage-note"></p>
+          </section>
+        </div>
+        <p class="table-footnote"><span>ⓘ</span> Ranking calculado solo con capturas de esa tienda: (puntuación GPU + puntuación RAM) ÷ precio. El vendedor y la variante figuran en cada fila.</p>
+      </section>
+
+      <section id="historico" class="history-section" aria-labelledby="history-title">
+        <div class="section-heading history-heading">
+          <div><p class="eyebrow">SEGUIMIENTO DE PRECIOS</p><h2 id="history-title">Historial de capturas</h2></div>
+          <label class="select-filter history-select">MODELO
+            <select id="history-model"><option value="all">Todos</option></select>
+          </label>
+        </div>
+        <div class="history-stats" aria-live="polite">
+          <div><span>PRECIO ACTUAL</span><strong id="history-current">—</strong></div>
+          <div><span>MÍNIMO REGISTRADO</span><strong id="history-min">—</strong></div>
+          <div><span>MÁXIMO REGISTRADO</span><strong id="history-max">—</strong></div>
+          <div><span>VARIACIÓN</span><strong id="history-change">—</strong></div>
+        </div>
+        <p class="history-note">Hay una captura diaria por configuración. Se añadirá evolución cuando existan observaciones de más fechas.</p>
+        <div class="chart-frame"><canvas id="price-chart" aria-label="Gráfico de precios capturados" role="img"></canvas><p id="chart-fallback" class="chart-fallback" hidden>No se pudo cargar el gráfico. Comprueba tu conexión para acceder a Chart.js.</p></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true"><span class="brand-mark-p">P</span><span class="brand-mark-dot"></span></span><span>precio<span class="brand-light">pulso</span></span></a><p>Monitor de precios · Captura manual · Sin afiliación con las tiendas</p><a href="docs/architecture.md">Sobre el proyecto</a></footer>
+    <div id="load-error" class="load-error" role="alert" hidden>No se pudo cargar el catálogo. Abre la web desde un servidor local o GitHub Pages.</div>
+  </body>
+</html>
