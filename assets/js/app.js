@@ -29,7 +29,7 @@ function renderStoreRanking(storeKey, rowsSelector, countSelector, coverageSelec
       <td>${product.ram} GB · ${escapeHtml(product.ssdLabel)}</td>
       <td class="numeric rank-store-price">${currency.format(product.storeOffer.price)}</td>
       <td><span class="value-badge">${product.storeValue.toFixed(3)}</span></td>
-      <td class="rank-source"><a href="${escapeHtml(product.storeOffer.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(product.storeOffer.seller)} · ${escapeHtml(product.updatedAt)} ↗</a></td>
+      <td class="rank-source"><a href="${escapeHtml(product.storeOffer.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(product.storeOffer.seller)} · ${escapeHtml(product.storeOffer.updatedAt || product.updatedAt)} ↗</a></td>
     </tr>`).join("");
   document.querySelector(countSelector).textContent = `${ranked.length} / 10 capturas`;
   const missing = Math.max(0, 10 - ranked.length);
