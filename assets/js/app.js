@@ -29,7 +29,7 @@ function renderStoreRanking(storeKey, rowsSelector, countSelector, coverageSelec
       <td>${product.ram} GB · ${escapeHtml(product.ssdLabel)}</td>
       <td class="numeric rank-store-price">${currency.format(product.storeOffer.price)}</td>
       <td><span class="value-badge">${product.storeValue.toFixed(3)}</span></td>
-      <td class="rank-source"><a href="${escapeHtml(product.storeOffer.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(product.storeOffer.seller)} · ${escapeHtml(product.storeOffer.updatedAt || product.updatedAt)} ↗</a></td>
+      <td class="rank-source"><a href="${escapeHtml(product.storeOffer.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(product.storeOffer.seller)} · ${escapeHtml(product.captureDate || product.storeOffer.updatedAt || product.updatedAt)} ↗</a></td>
     </tr>`).join("");
   document.querySelector(countSelector).textContent = `${ranked.length} / 10 capturas`;
   const missing = Math.max(0, 10 - ranked.length);
@@ -83,7 +83,7 @@ async function start() {
       const offers = current.offers;
       const available = Object.values(offers).filter(Boolean).map((offer) => offer.price);
       if (!available.length) return null;
-      return scoreProduct({ ...item, offers, bestPrice: Math.min(...available), priceDifference: Math.abs(offers.amazon && offers.pccomponentes ? offers.amazon.price - offers.pccomponentes.price : 0), updatedAt: current.updatedAt });
+      return scoreProduct({ ...item, offers, bestPrice: Math.min(...available), priceDifference: Math.abs(offers.amazon && offers.pccomponentes ? offers.amazon.price - offers.pccomponentes.price : 0), updatedAt: current.updatedAt, captureDate });
     }).filter(Boolean);
     setupHistorySelector();
     renderKpis();
