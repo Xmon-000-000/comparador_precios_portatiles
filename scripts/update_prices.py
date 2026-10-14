@@ -260,8 +260,8 @@ def main() -> int:
                         today,
                     )
 
-                if amazon_price is not None or pc_price is not None:
-                    entry["updatedAt"] = today
+                # Keep the last known offer when today's capture fails.
+                entry["updatedAt"] = today if (amazon_price is not None or pc_price is not None) else entry.get("updatedAt")
 
                 historical_price = None
                 found_prices = [value for value in (amazon_price, pc_price) if value is not None]
