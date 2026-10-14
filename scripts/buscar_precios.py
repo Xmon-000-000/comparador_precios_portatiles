@@ -71,7 +71,7 @@ def extract_prices(text):
                  .replace(",", ".")
             )
 
-            if 500 <= value <= 5000:
+            if 500 <= value <= 2000:
                 prices.append(value)
 
         except:
