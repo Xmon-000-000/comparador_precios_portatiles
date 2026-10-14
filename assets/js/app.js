@@ -12,7 +12,7 @@ function escapeHtml(value) {
 
 function renderStoreRanking(storeKey, rowsSelector, countSelector, coverageSelector) {
   const ranked = products
-    .filter((product) => product.offers[storeKey]?.price > 0 && product.bestPrice <= 2000)
+    .filter((product) => product.offers[storeKey]?.price > 0 && product.offers[storeKey].price <= 2000 && product.bestPrice <= 2000)
     .map((product) => ({
       ...product,
       storeOffer: product.offers[storeKey],

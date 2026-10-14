@@ -57,7 +57,7 @@ def extract_prices(text: Any) -> List[float]:
     for raw in raw_prices:
         try:
             value = float(raw.replace(".", "").replace(",", "."))
-            if 500 <= value <= 5000:
+            if 500 <= value <= 2000:
                 prices.append(value)
         except ValueError:
             pass
@@ -261,8 +261,8 @@ def main() -> int:
                         today,
                     )
 
-                # Keep the last known offer when today's capture fails.
-                entry["updatedAt"] = today if (amazon_price is not None or pc_price is not None) else entry.get("updatedAt")
+                # Updated date is today only when a capture succeeded; otherwise null.
+                entry["updatedAt"] = today if (amazon_price is not None or pc_price is not None) else None
 
                 historical_price = None
                 found_prices = [value for value in (amazon_price, pc_price) if value is not None]
