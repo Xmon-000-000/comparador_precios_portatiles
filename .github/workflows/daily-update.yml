@@ -15,17 +15,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
+  - name: Set up Python
+    uses: actions/setup-python@v5
+    with:
+      python-version: '3.12'
 
-      - name: Update JSON snapshots
-        env:
-          PRICE_FEED_URL: ${{ secrets.PRICE_FEED_URL }}
-          PRICE_FEED_PATH: ${{ secrets.PRICE_FEED_PATH }}
-        run: |
-          python scripts/update_prices.py
+  - name: Install Playwright browser
+    run: |
+      python -m pip install playwright
+      python -m playwright install --with-deps chromium
+
+  - name: Update JSON snapshots
+    env:
+      PRICE_FEED_URL: ${{ secrets.PRICE_FEED_URL }}
+      PRICE_FEED_PATH: ${{ secrets.PRICE_FEED_PATH }}
+    run: |
+      python scripts/update_prices.py
+
 
       - name: Commit and push changes
         run: |
