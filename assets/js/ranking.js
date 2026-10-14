@@ -1,5 +1,15 @@
-const GPU_SCORES = { "RTX 5060": 60, "RTX 5070": 85, "RTX 5080": 100 };
-const RAM_SCORES = { 16: 10, 24: 15, 32: 20, 64: 30 };
+export const GPU_SCORES = {
+  "RTX 5060": 60,
+  "RTX 5070": 85,
+  "RTX 5080": 100
+};
+
+export const RAM_SCORES = {
+  16: 10,
+  24: 15,
+  32: 20,
+  64: 30
+};
 
 export function scoreProduct(product) {
   const gpuScore = GPU_SCORES[product.gpu] ?? 0;

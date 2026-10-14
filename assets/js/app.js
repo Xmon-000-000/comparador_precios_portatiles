@@ -74,6 +74,9 @@ async function start() {
     if (![catalogResponse, pricesResponse, historyResponse].every((response) => response.ok)) throw new Error("No se pudieron descargar los datos JSON");
     const [catalog, prices, priceHistory] = await Promise.all([catalogResponse.json(), pricesResponse.json(), historyResponse.json()]);
     history = priceHistory;
+    const captureDate = prices.captureDate || "—";
+    document.querySelector("#capture-date").textContent = `CAPTURAS · ${captureDate}`;
+    document.querySelector("#capture-date-title").textContent = `CAPTURAS DEL ${captureDate}`;
     products = catalog.products.map((item) => {
       const current = prices.products.find((price) => price.id === item.id);
       if (!current) return null;
