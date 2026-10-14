@@ -12,7 +12,7 @@ function escapeHtml(value) {
 
 function renderStoreRanking(storeKey, rowsSelector, countSelector, coverageSelector) {
   const ranked = products
-    .filter((product) => product.offers[storeKey]?.price > 0)
+    .filter((product) => product.offers[storeKey]?.price > 0 && product.bestPrice <= 2000)
     .map((product) => ({
       ...product,
       storeOffer: product.offers[storeKey],
@@ -29,7 +29,7 @@ function renderStoreRanking(storeKey, rowsSelector, countSelector, coverageSelec
       <td>${product.ram} GB · ${escapeHtml(product.ssdLabel)}</td>
       <td class="numeric rank-store-price">${currency.format(product.storeOffer.price)}</td>
       <td><span class="value-badge">${product.storeValue.toFixed(3)}</span></td>
-      <td class="rank-source"><a href="${escapeHtml(product.storeOffer.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(product.storeOffer.seller)} · ${escapeHtml(product.storeOffer.updatedAt || product.updatedAt)} ↗</a></td>
+      <td class="rank-source"><a href="${escapeHtml(product.storeOffer.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(product.storeOffer.seller)} · ${escapeHtml(product.storeOffer.updatedAt && product.storeOffer.updatedAt === product.captureDate ? product.storeOffer.updatedAt : "—")} ↗</a></td>
     </tr>`).join("");
   document.querySelector(countSelector).textContent = `${ranked.length} / 10 capturas`;
   const missing = Math.max(0, 10 - ranked.length);
@@ -39,11 +39,12 @@ function renderStoreRanking(storeKey, rowsSelector, countSelector, coverageSelec
 }
 
 function renderKpis() {
-  const cheapest = [...products].sort((a, b) => a.bestPrice - b.bestPrice)[0];
-  const bestValue = rankProducts(products)[0];
-  const bestOffer = products.reduce((best, product) => product.bestPrice < best.bestPrice ? product : best, products[0]);
-  const average = products.reduce((sum, product) => sum + product.bestPrice, 0) / products.length;
-  document.querySelector("#kpi-count").textContent = number.format(products.length);
+  const affordable = products.filter((product) => product.bestPrice <= 2000);
+  const cheapest = [...affordable].sort((a, b) => a.bestPrice - b.bestPrice)[0] || affordable[0];
+  const bestValue = rankProducts(affordable)[0] || affordable[0];
+  const bestOffer = affordable.reduce((best, product) => !best || product.bestPrice < best.bestPrice ? product : best, affordable[0] || products[0]);
+  const average = affordable.reduce((sum, product) => sum + product.bestPrice, 0) / (affordable.length || 1);
+  document.querySelector("#kpi-count").textContent = number.format(affordable.length);
   document.querySelector("#kpi-deal").textContent = currency.format(bestOffer.bestPrice);
   document.querySelector("#kpi-deal-name").textContent = `${bestOffer.brand} ${bestOffer.model}`;
   document.querySelector("#kpi-average").textContent = currency.format(average);
@@ -89,7 +90,7 @@ async function start() {
     renderKpis();
     renderStoreRanking("amazon", "#amazon-ranking-rows", "#amazon-count", "#amazon-coverage");
     renderStoreRanking("pccomponentes", "#pccomponentes-ranking-rows", "#pccomponentes-count", "#pccomponentes-coverage");
-    document.querySelector("#result-count").textContent = `${products.length} configuraciones verificadas`;
+    document.querySelector("#result-count").textContent = `${products.filter((product) => product.bestPrice <= 2000).length} configuraciones verificadas`;
     renderHistory();
   } catch (error) {
     console.error("Error al iniciar PrecioPulso:", error);
