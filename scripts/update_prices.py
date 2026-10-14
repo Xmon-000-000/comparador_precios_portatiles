@@ -12,6 +12,7 @@ import difflib
 import json
 import os
 import re
+import sys
 import time
 from datetime import date
 from pathlib import Path
@@ -269,6 +270,10 @@ def main() -> int:
                     historical_price = min(found_prices)
                 update_historico(historico, pid, historical_price, today)
 
+            for pid in historico_by_id:
+                if pid not in unique:
+                    update_historico(historico, pid, None, today)
+
             if browser is not None:
                 browser.close()
     except Exception as exc:
@@ -296,3 +301,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
