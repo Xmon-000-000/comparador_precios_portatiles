@@ -2,18 +2,18 @@
   "schemaVersion": 1,
   "currency": "EUR",
   "captureDate": "2026-10-14",
-  "disclaimer": "Capturas actualizadas automáticamente el 2026-10-14. Los precios pueden cambiar; cada valor corresponde solo a la variante y vendedor identificados.",
+  "disclaimer": "Capturas actualizadas el 2026-10-14. Los precios pueden cambiar; cada valor corresponde solo a la variante y vendedor identificados.",
   "products": [
     {
       "id": "msi-cyborg-422xes-5070-32-1tb",
-      "updatedAt": null,
+      "updatedAt": "2026-10-14",
       "offers": {
         "amazon": null,
         "pccomponentes": {
-          "price": 1499,
+          "price": 1499.0,
           "url": "https://www.pccomponentes.com/portatil-msi-cyborg-15-b2rwgkg-422xes-156-intel-core-7-240h-32gb-1tb-ssd-rtx-5070-8gb-rgb",
           "seller": "PcComponentes",
-          "updatedAt": null
+          "updatedAt": "2026-10-14"
         }
       }
     },
@@ -40,33 +40,18 @@
     },
     {
       "id": "asus-rog-strix-g16-5080-32-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": null,
       "offers": {
-        "amazon": {
-          "price": 1719.99,
-          "url": "https://www.amazon.es/s?k=ASUS+ROG+Strix+G16+G615LW+RTX+5080+32GB+1TB",
-          "seller": "Amazon",
-          "updatedAt": "2026-10-14"
-        },
+        "amazon": null,
         "pccomponentes": null
       }
     },
     {
       "id": "asus-tuf-fa608umi-r72b56cs1-5060-32-512gb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": null,
       "offers": {
-        "amazon": {
-          "price": 1888.99,
-          "url": "https://www.amazon.es/s?k=ASUS+TUF+Gaming+A16+FA608UMI-R72B56CS1+RTX+5060+32GB+512GB",
-          "seller": "Amazon",
-          "updatedAt": "2026-10-14"
-        },
-        "pccomponentes": {
-          "price": 1723.85,
-          "url": "https://www.pccomponentes.com/portatil-asus-tuf-gaming-a16-fa608umi-r72b56cs1-16-amd-ryzen-7-260-32gb-512gb-ssd-rtx-5060-sin-sistema-operativo",
-          "seller": "Caseking",
-          "updatedAt": "2026-10-14"
-        }
+        "amazon": null,
+        "pccomponentes": null
       }
     },
     {
@@ -79,27 +64,17 @@
     },
     {
       "id": "hp-omen-16-ap0037ns-5070-32-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": null,
       "offers": {
-        "amazon": {
-          "price": 1921.82,
-          "url": "https://www.amazon.es/s?k=HP+OMEN+16-ap0037ns+RTX+5070+32GB+1TB",
-          "seller": "Amazon",
-          "updatedAt": "2026-10-14"
-        },
+        "amazon": null,
         "pccomponentes": null
       }
     },
     {
       "id": "msi-cyborg-b0h1m6hn9f-5070-16-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": null,
       "offers": {
-        "amazon": {
-          "price": 1249.0,
-          "url": "https://www.amazon.es/s?k=MSI+Cyborg+15+RTX+5070+Core+7+240H+16GB+1TB",
-          "seller": "Amazon",
-          "updatedAt": "2026-10-14"
-        },
+        "amazon": null,
         "pccomponentes": null
       }
     },
@@ -120,14 +95,9 @@
       "id": "gigabyte-a16-cvhi3es864sd-5060-32-1tb",
       "updatedAt": "2026-10-14",
       "offers": {
-        "amazon": {
-          "price": 1701.55,
-          "url": "https://www.amazon.es/s?k=Gigabyte+Gaming+A16+CVHI3ES864SD+RTX+5060+32GB+1TB",
-          "seller": "Amazon",
-          "updatedAt": "2026-10-14"
-        },
+        "amazon": null,
         "pccomponentes": {
-          "price": 1249,
+          "price": 1568.99,
           "url": "https://www.pccomponentes.com/portatil-gigabyte-a16-cvhi3es864sd-16-intel-core-i7-13620h-32gb-1tb-ssd-rtx-5060-8gb-freedos",
           "seller": "PcComponentes",
           "updatedAt": "2026-10-14"
@@ -136,14 +106,9 @@
     },
     {
       "id": "hp-omen-16-am0061ns-5060-32-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": null,
       "offers": {
-        "amazon": {
-          "price": 1899.0,
-          "url": "https://www.amazon.es/s?k=HP+OMEN+16-am0061ns+RTX+5060+32GB+1TB",
-          "seller": "Amazon",
-          "updatedAt": "2026-10-14"
-        },
+        "amazon": null,
         "pccomponentes": null
       }
     },
@@ -164,12 +129,7 @@
       "id": "pccom-revolt-5060-i7-14650hx-32-1tb",
       "updatedAt": "2026-10-14",
       "offers": {
-        "amazon": {
-          "price": 1839.0,
-          "url": "https://www.amazon.es/s?k=PcCom+Revolt+5060+i7-14650HX+RTX+5060+32GB+1TB",
-          "seller": "Amazon",
-          "updatedAt": "2026-10-14"
-        },
+        "amazon": null,
         "pccomponentes": {
           "price": 1499.99,
           "url": "https://www.pccomponentes.com/portatil-pccom-revolt-5060-intel-core-i7-14650hx-32gb-1tb-ssd-rtx-5060-16-plus-windows-11",
@@ -182,14 +142,9 @@
       "id": "lenovo-legion-5-15ahp11-5060-32-512gb",
       "updatedAt": "2026-10-14",
       "offers": {
-        "amazon": {
-          "price": 1099.0,
-          "url": "https://www.amazon.es/s?k=Lenovo+Legion+5+15AHP11+RTX+5060+32GB+512GB",
-          "seller": "Amazon",
-          "updatedAt": "2026-10-14"
-        },
+        "amazon": null,
         "pccomponentes": {
-          "price": 1299,
+          "price": 1549.01,
           "url": "https://www.pccomponentes.com/portatil-lenovo-legion-5-15ahp11-15-3-amd-ryzen-7-250-32gb-512gb-ssd-rtx-5060-freedos",
           "seller": "PcComponentes",
           "updatedAt": "2026-10-14"
@@ -200,14 +155,9 @@
       "id": "acer-nitro-v16-anv16-42-5060-32-1tb",
       "updatedAt": "2026-10-14",
       "offers": {
-        "amazon": {
-          "price": 979.0,
-          "url": "https://www.amazon.es/s?k=Acer+Nitro+V+16+ANV16-42+RTX+5060+32GB+1TB",
-          "seller": "Amazon",
-          "updatedAt": "2026-10-14"
-        },
+        "amazon": null,
         "pccomponentes": {
-          "price": 1149,
+          "price": 1199.0,
           "url": "https://www.pccomponentes.com/portatil-acer-nitro-v-16-anv16-42-16-amd-ryzen-7-260-32gb-1tb-ssd-rtx-5060-sin-sistema-operativo",
           "seller": "PcComponentes",
           "updatedAt": "2026-10-14"
@@ -218,14 +168,9 @@
       "id": "lenovo-loq-15irx10-5060-16-512gb",
       "updatedAt": "2026-10-14",
       "offers": {
-        "amazon": {
-          "price": 1611.99,
-          "url": "https://www.amazon.es/s?k=15IRX10",
-          "seller": "Amazon",
-          "updatedAt": "2026-10-14"
-        },
+        "amazon": null,
         "pccomponentes": {
-          "price": 999,
+          "price": 1139.0,
           "url": "https://www.pccomponentes.com/portatil-lenovo-loq-15irx10-15-6-intel-core-i7-13645hx-16gb-512gb-ssd-rtx-5060-freedos",
           "seller": "PcComponentes",
           "updatedAt": "2026-10-14"
@@ -236,14 +181,9 @@
       "id": "acer-nitro-v15-anv15-52-5060-32-1tb",
       "updatedAt": "2026-10-14",
       "offers": {
-        "amazon": {
-          "price": 979.0,
-          "url": "https://www.amazon.es/s?k=Acer+Nitro+V+15+ANV15-52+i9-13900H+RTX+5060+32GB+1TB",
-          "seller": "Amazon",
-          "updatedAt": "2026-10-14"
-        },
+        "amazon": null,
         "pccomponentes": {
-          "price": 1199,
+          "price": 1299.0,
           "url": "https://www.pccomponentes.com/portatil-acer-nitro-v-15-anv15-52-156-intel-core-i9-13900h-32gb-1tb-ssd-rtx-5060-sin-sistema-operativo",
           "seller": "PcComponentes",
           "updatedAt": "2026-10-14"
@@ -252,20 +192,49 @@
     },
     {
       "id": "hp-omen-slim-16-an0006ns-5060-24-1tb",
+      "updatedAt": null,
+      "offers": {
+        "amazon": null,
+        "pccomponentes": null
+      }
+    },
+    {
+      "id": "msi-katana-15-b14wgk-086xes-5070-32-1tb",
       "updatedAt": "2026-10-14",
       "offers": {
         "amazon": {
-          "price": 1999.0,
-          "url": "https://www.amazon.es/s?k=HP+OMEN+Slim+16-an0006ns+RTX+5060+24GB+1TB",
+          "price": 1399.0,
+          "url": "",
           "seller": "Amazon",
           "updatedAt": "2026-10-14"
         },
+        "pccomponentes": null
+      }
+    },
+    {
+      "id": "acer-nitro-v16-anv16-42-r2f8-5070-32-1tb",
+      "updatedAt": "2026-10-14",
+      "offers": {
+        "amazon": null,
         "pccomponentes": {
-          "price": 1229,
-          "url": "https://www.pccomponentes.com/portatil-hp-omen-slim-16-an0006ns-16-intel-core-ultra-7-255h-24gb-1tb-ssd-rtx-5060-8gb-shadow-black",
+          "price": 1499.0,
+          "url": "https://www.pccomponentes.com/portatil-acer-nitro-v-16-anv16-42-r2f8-16-amd-ryzen-7-260-32gb-1tb-ssd-rtx-5070-sin-so",
           "seller": "PcComponentes",
           "updatedAt": "2026-10-14"
         }
+      }
+    },
+    {
+      "id": "asus-tuf-a18-fa808up-s8113-5070-16-1tb",
+      "updatedAt": "2026-10-14",
+      "offers": {
+        "amazon": {
+          "price": 1399.99,
+          "url": "",
+          "seller": "Amazon",
+          "updatedAt": "2026-10-14"
+        },
+        "pccomponentes": null
       }
     }
   ]
