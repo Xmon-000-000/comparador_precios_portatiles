@@ -200,14 +200,9 @@
     },
     {
       "id": "msi-katana-15-b14wgk-086xes-5070-32-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": null,
       "offers": {
-        "amazon": {
-          "price": 1399.0,
-          "url": "",
-          "seller": "Amazon",
-          "updatedAt": "2026-10-14"
-        },
+        "amazon": null,
         "pccomponentes": null
       }
     },
@@ -230,7 +225,7 @@
       "offers": {
         "amazon": {
           "price": 1399.99,
-          "url": "",
+          "url": "https://www.amazon.es/dp/B0GMK27F24",
           "seller": "Amazon",
           "updatedAt": "2026-10-14"
         },
