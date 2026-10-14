@@ -276,6 +276,54 @@
       "screen": 16,
       "panel": "WQXGA",
       "searchTerms": "HP OMEN Slim 16-an0006ns RTX 5060 24GB 1TB"
+    },
+    {
+      "id": "msi-katana-15-b14wgk-086xes-5070-32-1tb",
+      "brand": "MSI",
+      "model": "Katana 15 HX B14WGK-086XES",
+      "searchCode": "B14WGK-086XES",
+      "searchTerms": "MSI Katana 15 HX B14WGK-086XES RTX 5070 32GB 1TB",
+      "cpu": "Intel Core i7-14650HX",
+      "cpuScore": 88,
+      "gpu": "RTX 5070",
+      "gpuVram": 8,
+      "ram": 32,
+      "ssd": 1000,
+      "ssdLabel": "1 TB SSD",
+      "screen": 15.6,
+      "panel": "FHD · 144 Hz"
+    },
+    {
+      "id": "acer-nitro-v16-anv16-42-r2f8-5070-32-1tb",
+      "brand": "Acer",
+      "model": "Nitro V 16 ANV16-42-R2F8",
+      "searchCode": "ANV16-42-R2F8",
+      "searchTerms": "Acer Nitro V 16 ANV16-42-R2F8 RTX 5070 32GB 1TB",
+      "cpu": "AMD Ryzen 7 260",
+      "cpuScore": 76,
+      "gpu": "RTX 5070",
+      "gpuVram": 8,
+      "ram": 32,
+      "ssd": 1000,
+      "ssdLabel": "1 TB SSD",
+      "screen": 16,
+      "panel": "WUXGA · 180 Hz"
+    },
+    {
+      "id": "asus-tuf-a18-fa808up-s8113-5070-16-1tb",
+      "brand": "ASUS",
+      "model": "TUF Gaming A18 FA808UP-S8113",
+      "searchCode": "FA808UP-S8113",
+      "searchTerms": "ASUS TUF Gaming A18 FA808UP-S8113 RTX 5070 16GB 1TB",
+      "cpu": "AMD Ryzen 7 260",
+      "cpuScore": 76,
+      "gpu": "RTX 5070",
+      "gpuVram": 8,
+      "ram": 16,
+      "ssd": 1000,
+      "ssdLabel": "1 TB SSD",
+      "screen": 18,
+      "panel": "WUXGA · 165 Hz"
     }
   ]
 }
