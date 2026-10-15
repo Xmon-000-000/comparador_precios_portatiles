@@ -1,31 +1,31 @@
 {
   "schemaVersion": 1,
   "currency": "EUR",
-  "captureDate": "2026-10-14",
-  "disclaimer": "Capturas actualizadas el 2026-10-14. Los precios pueden cambiar; cada valor corresponde solo a la variante y vendedor identificados.",
+  "captureDate": "2026-10-15",
+  "disclaimer": "Capturas actualizadas el 2026-10-15. Los precios pueden cambiar; cada valor corresponde solo a la variante y vendedor identificados.",
   "products": [
     {
       "id": "msi-cyborg-422xes-5070-32-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "offers": {
         "amazon": null,
         "pccomponentes": {
           "price": 1499.0,
           "url": "https://www.pccomponentes.com/portatil-msi-cyborg-15-b2rwgkg-422xes-156-intel-core-7-240h-32gb-1tb-ssd-rtx-5070-8gb-rgb",
           "seller": "PcComponentes",
-          "updatedAt": "2026-10-14"
+          "updatedAt": "2026-10-15"
         }
       }
     },
     {
       "id": "asus-tuf-fa608um-rv005-5060-32-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "offers": {
         "amazon": {
           "price": 1499.0,
           "url": "https://www.amazon.es/s?k=FA608UM-RV005",
           "seller": "Amazon",
-          "updatedAt": "2026-10-14"
+          "updatedAt": "2026-10-15"
         },
         "pccomponentes": null
       }
@@ -80,27 +80,27 @@
     },
     {
       "id": "msi-katana-b14wfk-082xes-5060-32-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "offers": {
         "amazon": {
           "price": 1499.0,
           "url": "https://www.amazon.es/s?k=B14WFK-082XES",
           "seller": "Amazon",
-          "updatedAt": "2026-10-14"
+          "updatedAt": "2026-10-15"
         },
         "pccomponentes": null
       }
     },
     {
       "id": "gigabyte-a16-cvhi3es864sd-5060-32-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "offers": {
         "amazon": null,
         "pccomponentes": {
           "price": 1568.99,
           "url": "https://www.pccomponentes.com/portatil-gigabyte-a16-cvhi3es864sd-16-intel-core-i7-13620h-32gb-1tb-ssd-rtx-5060-8gb-freedos",
           "seller": "PcComponentes",
-          "updatedAt": "2026-10-14"
+          "updatedAt": "2026-10-15"
         }
       }
     },
@@ -114,79 +114,79 @@
     },
     {
       "id": "acer-nitro-v15-anv15-52-5060-16-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "offers": {
         "amazon": {
           "price": 979.0,
           "url": "https://www.amazon.es/s?k=Acer+Nitro+V+15+ANV15-52+i7+RTX+5060+16GB+1TB",
           "seller": "Amazon",
-          "updatedAt": "2026-10-14"
+          "updatedAt": "2026-10-15"
         },
         "pccomponentes": null
       }
     },
     {
       "id": "pccom-revolt-5060-i7-14650hx-32-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "offers": {
         "amazon": null,
         "pccomponentes": {
           "price": 1499.99,
           "url": "https://www.pccomponentes.com/portatil-pccom-revolt-5060-intel-core-i7-14650hx-32gb-1tb-ssd-rtx-5060-16-plus-windows-11",
           "seller": "PcComponentes",
-          "updatedAt": "2026-10-14"
+          "updatedAt": "2026-10-15"
         }
       }
     },
     {
       "id": "lenovo-legion-5-15ahp11-5060-32-512gb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "offers": {
         "amazon": null,
         "pccomponentes": {
           "price": 1549.01,
           "url": "https://www.pccomponentes.com/portatil-lenovo-legion-5-15ahp11-15-3-amd-ryzen-7-250-32gb-512gb-ssd-rtx-5060-freedos",
           "seller": "PcComponentes",
-          "updatedAt": "2026-10-14"
+          "updatedAt": "2026-10-15"
         }
       }
     },
     {
       "id": "acer-nitro-v16-anv16-42-5060-32-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "offers": {
         "amazon": null,
         "pccomponentes": {
           "price": 1199.0,
           "url": "https://www.pccomponentes.com/portatil-acer-nitro-v-16-anv16-42-16-amd-ryzen-7-260-32gb-1tb-ssd-rtx-5060-sin-sistema-operativo",
           "seller": "PcComponentes",
-          "updatedAt": "2026-10-14"
+          "updatedAt": "2026-10-15"
         }
       }
     },
     {
       "id": "lenovo-loq-15irx10-5060-16-512gb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "offers": {
         "amazon": null,
         "pccomponentes": {
           "price": 1139.0,
           "url": "https://www.pccomponentes.com/portatil-lenovo-loq-15irx10-15-6-intel-core-i7-13645hx-16gb-512gb-ssd-rtx-5060-freedos",
           "seller": "PcComponentes",
-          "updatedAt": "2026-10-14"
+          "updatedAt": "2026-10-15"
         }
       }
     },
     {
       "id": "acer-nitro-v15-anv15-52-5060-32-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "offers": {
         "amazon": null,
         "pccomponentes": {
           "price": 1299.0,
           "url": "https://www.pccomponentes.com/portatil-acer-nitro-v-15-anv15-52-156-intel-core-i9-13900h-32gb-1tb-ssd-rtx-5060-sin-sistema-operativo",
           "seller": "PcComponentes",
-          "updatedAt": "2026-10-14"
+          "updatedAt": "2026-10-15"
         }
       }
     },
@@ -208,26 +208,26 @@
     },
     {
       "id": "acer-nitro-v16-anv16-42-r2f8-5070-32-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "offers": {
         "amazon": null,
         "pccomponentes": {
           "price": 1499.0,
           "url": "https://www.pccomponentes.com/portatil-acer-nitro-v-16-anv16-42-r2f8-16-amd-ryzen-7-260-32gb-1tb-ssd-rtx-5070-sin-so",
           "seller": "PcComponentes",
-          "updatedAt": "2026-10-14"
+          "updatedAt": "2026-10-15"
         }
       }
     },
     {
       "id": "asus-tuf-a18-fa808up-s8113-5070-16-1tb",
-      "updatedAt": "2026-10-14",
+      "updatedAt": "2026-10-15",
       "offers": {
         "amazon": {
           "price": 1399.99,
           "url": "https://www.amazon.es/dp/B0GMK27F24",
           "seller": "Amazon",
-          "updatedAt": "2026-10-14"
+          "updatedAt": "2026-10-15"
         },
         "pccomponentes": null
       }
